@@ -5,22 +5,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hello Git</title>
+
+  <!-- Css Styles --> 
+   <link rel="stylesheet" href="./style.css">
+<!--   <style>
+
+    #site_header {
+      background-color: rgb(27, 2, 255);
+      color: white;
+    }
+
+  </style> -->
+
 </head>
 
-<body>
+<body id="page">
 
-  <header>
+  <header id="site_header">
     <h1>Un giornata al museo</h1>
   </header>
+  <!-- /#site_header -->
+  
   <main>
     
-    <section>
-      <h2>Journal</h2>
-
-      <article>
-        <h2>1. Il dipinto che mi ha colpito di piu</h2>
+    <section id="posts">
+      <h2 class="posts_section_title">Journal</h2>
+      
+      <article class="post_card">
+        <h2 class="post_title">1. Il dipinto che mi ha colpito di piu</h2>
         <figure>
-          <img src="./img/quadro.png" alt="">
+          <img class="img-fluid" src="./img/quadro.png" alt="">
           <figcaption>
             Un opera d'arte affascinante visa nella galelria principale
           </figcaption>
@@ -30,11 +44,12 @@
           voluptatum maxime consectetur vero exercitationem non perferendis deserunt.
         </p>
       </article>
+      <!-- /.post_card -->
 
-      <article>
-        <h2>2. un antica scultura</h2>
+      <article class="post_card">
+        <h2 class="post_title">2. un antica scultura</h2>
         <figure>
-          <img src="./img/scultura.png" alt="">
+          <img class="img-fluid" src="./img/scultura.png" alt="">
           <figcaption>
             Scultura Lorem ipsum dolor sit.
           </figcaption>
@@ -45,9 +60,10 @@
           alias ex suscipit.
         </p>
       </article>
+      <!-- /.post_card -->
 
     </section>
-    <!-- /Posts -->
+    <!-- /#posts -->
 
     <section>
       <h3>Le cose che ho imparato oggi:</h3>
