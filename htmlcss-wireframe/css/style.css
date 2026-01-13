@@ -8,3 +8,8 @@
 body {
   width: 512px;
 }
+
+#site_header {
+  padding: 8px;
+  border-bottom: 2px solid;
+}
