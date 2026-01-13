@@ -6,14 +6,17 @@
   box-sizing: border-box;
 }
 
-body {
+body
+{
   width: 512px;
 }
+
 /* #endregion Common */
 
 /* #region Header */
 
-#site_header {
+#site_header
+{
   padding: 8px;
   border-bottom: 2px solid;
 }
@@ -21,15 +24,26 @@ body {
 /* #endregion Header */
 
 /* #region Main */
-#site_main {
+#site_main
+{
   padding: 1rem 2rem;
   min-height: 500px;
 }
 
-.wireframe_card{
+.wireframe_card
+{
   border: 2px solid black;
   padding: 8px;
   margin-bottom: 1rem;
 }
 
 /* #endregion Main */
+
+/* #region Footer */
+#site_footer
+{
+  padding: 8px;
+  border-top: 2px solid;
+}
+
+/* #endregion Footer */
