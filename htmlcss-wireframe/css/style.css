@@ -13,11 +13,13 @@ body
 {
   width: 512px;
   font-family: "Space Grotesk", sans-serif;
-  background-image: url('https://pics.freeartbackgrounds.com/midle/Sea_Wave_on_Sand_Background-1229.jpg');
+  background-color: rgb(219, 219, 219);
+  /*   background-image: url('https://pics.freeartbackgrounds.com/midle/Sea_Wave_on_Sand_Background-1229.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+   */
 }
 
 /* #endregion Common */
@@ -27,8 +29,13 @@ body
 header
 {
 
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
   padding: 8px;
-  border-bottom: 2px solid;
+  /* border-bottom: 2px solid; */
   background-color: #005188;
   color: rgb(255 255 255 / 90%);
   text-align: center;
@@ -43,15 +50,30 @@ header
 main
 {
   padding: 1rem 2rem;
+  /*  padding-top: 70px; */
   min-height: 500px;
 }
 
 .wireframe_card
 {
-  border: 2px solid black;
+  border: 1px solid rgb(194, 194, 194);
   padding: 8px;
   margin-bottom: 1rem;
   min-height: 180px;
+  border-radius: 0.75rem;
+  background-color: rgba(255, 255, 255, 0.842);
+  position: relative;
+}
+
+.badge
+{
+  background-color: #005188;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 10px;
+  position: absolute;
+  top: 4px;
+  right: -10px;
 }
 
 /* #endregion Main */
@@ -59,8 +81,30 @@ main
 /* #region Footer */
 footer
 {
+  /* border-top: 2px solid; */
   padding: 8px;
-  border-top: 2px solid;
+  background-color: #005188;
+  color: rgb(255 255 255 / 90%);
+  text-align: center;
+  text-shadow: 2px 2px 2px rgb(119 126 163);
+  border-radius: 1rem 1rem 0 0;
+}
+
+#ai-assistant
+{
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  bottom: 3rem;
+  right: 2rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  background-color: #005188;
+  color: white;
+  border: none;
+
+
 }
 
 /* #endregion Footer */
