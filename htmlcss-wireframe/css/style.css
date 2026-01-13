@@ -19,3 +19,17 @@ body {
 }
 
 /* #endregion Header */
+
+/* #region Main */
+#site_main {
+  padding: 1rem 2rem;
+  min-height: 500px;
+}
+
+.wireframe_card{
+  border: 2px solid black;
+  padding: 8px;
+  margin-bottom: 1rem;
+}
+
+/* #endregion Main */
