@@ -1,3 +1,6 @@
+/* Import the bootstrap icons
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");  */
+
 /* #region Common */
 *
 {
@@ -9,22 +12,35 @@
 body
 {
   width: 512px;
+  font-family: "Space Grotesk", sans-serif;
+  background-image: url('https://pics.freeartbackgrounds.com/midle/Sea_Wave_on_Sand_Background-1229.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 /* #endregion Common */
 
 /* #region Header */
 
-#site_header
+header
 {
+
   padding: 8px;
   border-bottom: 2px solid;
+  background-color: #005188;
+  color: rgb(255 255 255 / 90%);
+  text-align: center;
+  text-shadow: 2px 2px 2px rgb(119 126 163);
+  border-radius: 0 0 1rem 1rem;
+
 }
 
 /* #endregion Header */
 
 /* #region Main */
-#site_main
+main
 {
   padding: 1rem 2rem;
   min-height: 500px;
@@ -41,7 +57,7 @@ body
 /* #endregion Main */
 
 /* #region Footer */
-#site_footer
+footer
 {
   padding: 8px;
   border-top: 2px solid;
