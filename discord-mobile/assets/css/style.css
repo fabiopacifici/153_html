@@ -1,3 +1,7 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Sigmar&display=swap');
+
 /* Common */
 *
 {
@@ -16,4 +20,11 @@
   --dis-primary-btn: #5865f2;
   --dis-black: black;
   --dis-white: white;
+}
+
+body {
+  /* background-color: #191d7b; */
+  /* with css variables */
+  background-color: var(--dis-page-bg);
+  width: 512px;
 }
