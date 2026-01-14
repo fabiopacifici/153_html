@@ -1,0 +1,19 @@
+/* Common */
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/*  Css Variables */
+
+:root
+{
+  --dis-page-bg: #191d7b;
+  --dis-card-bg: #5d64d1;
+  --dis-primary-btn: #5865f2;
+  --dis-black: black;
+  --dis-white: white;
+}
