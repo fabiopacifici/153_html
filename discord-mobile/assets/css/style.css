@@ -10,6 +10,10 @@
   box-sizing: border-box;
 }
 
+img
+{
+  max-width: 100%;
+}
 
 /*  Css Variables */
 
@@ -28,3 +32,4 @@ body {
   background-color: var(--dis-page-bg);
   width: 512px;
 }
+
