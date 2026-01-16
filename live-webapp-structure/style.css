@@ -1,0 +1,44 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body {
+  height: 100vh;
+} */
+
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header, footer
+{
+  height: 80px;
+  background-color: red;
+  flex-shrink: 0;
+}
+
+.central-wrapper {
+  /* height: calc(100% - 160px); */
+  flex-grow: 1;
+  background-color: blue;
+  display: flex;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 60px;
+  flex-shrink: 0;
+  background-color: rgb(200, 81, 255);
+}
+
+main {
+  flex-grow: 1;
+  overflow-y: auto;
+
+}

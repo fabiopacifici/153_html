@@ -1,0 +1,26 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body {
+  height: 100vh;
+} */
+
+
+.wrapper {
+  height: 100vh;
+}
+header, footer
+{
+  height: 80px;
+  background-color: red;
+}
+
+main {
+  height: calc(100% - 160px);
+  background-color: blue;
+  overflow: auto;
+}
