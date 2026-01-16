@@ -119,3 +119,71 @@ header.reel-header
 
 
 }
+
+
+footer
+{
+
+  .description
+  {
+    padding: 1rem;
+    max-width: 80%;
+  }
+
+  nav
+  {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 1rem;
+    background-color: black;
+
+
+    a:first-child
+    {
+      color: white;
+    }
+
+    a
+    {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: gray;
+      text-decoration: none;
+      font-size: 1.5rem;
+      position: relative;
+
+      span
+      {
+        font-size: 10px;
+      }
+    }
+
+
+    &>button
+    {
+      padding: 0.15rem 0.65rem;
+      border-radius: .5rem;
+      border: none;
+      border-left: 2px solid cyan;
+      border-right: 2px solid fuchsia;
+      font-size: 1.25rem;
+    }
+
+
+    .notifications
+    {
+      position: absolute;
+      top: 0;
+      left: 2rem;
+      background-color: red;
+      padding: 1px 6px;
+      border-radius: 8px;
+      color: white;
+    }
+
+  }
+
+
+}
