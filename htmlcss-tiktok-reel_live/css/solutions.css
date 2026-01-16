@@ -4,13 +4,16 @@ header.reel-header
   justify-content: space-between;
   color: white;
   padding: 1rem;
+
   a
   {
     color: rgba(255, 255, 255, 0.473);
     text-decoration: none;
   }
 
-  .left, .right {
+  .left,
+  .right
+  {
     font-size: 1.25rem;
   }
 
@@ -49,8 +52,9 @@ header.reel-header
       {
         color: white;
       }
-      
-      & ::after {
+
+      & ::after
+      {
         content: '';
         display: block;
         width: 1.5rem;
@@ -59,12 +63,59 @@ header.reel-header
         margin: 4px auto 0;
 
       }
-    
+
     }
 
 
 
   }
+
+
+}
+
+
+.sidebar
+{
+  color: white;
+  text-align: center;
+
+  .item
+  {
+    position: relative;
+    margin-bottom: 1.25rem;
+
+    &>[class^='bi']
+    {
+      font-size: 2rem;
+    }
+
+
+  }
+
+  .item .logo
+  {
+    border-radius: 50%;
+    border: 2px solid white;
+  }
+
+  .plus_circle
+  {
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    background-color: red;
+    width: 16px;
+    height: 16px;
+    line-height: 1;
+    text-align: center;
+    border-radius: 50%;
+    transform: translateX(-50%);
+
+  }
+
+
+
 
 
 }
