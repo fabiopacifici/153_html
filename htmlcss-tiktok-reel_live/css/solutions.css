@@ -1,0 +1,70 @@
+header.reel-header
+{
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 1rem;
+  a
+  {
+    color: rgba(255, 255, 255, 0.473);
+    text-decoration: none;
+  }
+
+  .left, .right {
+    font-size: 1.25rem;
+  }
+
+
+
+  ul
+  {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+
+
+    li:nth-child(2)
+    {
+      position: relative;
+    }
+
+    li:nth-child(2)::after
+    {
+      position: absolute;
+      top: 0;
+      left: 100%;
+      transform: translateY(-50%);
+      content: '';
+      display: block;
+      width: 8px;
+      height: 8px;
+      background-color: rgba(255, 0, 0, 0.336);
+      border-radius: 50%;
+    }
+
+    li:last-child
+    {
+
+      a
+      {
+        color: white;
+      }
+      
+      & ::after {
+        content: '';
+        display: block;
+        width: 1.5rem;
+        height: 3px;
+        background-color: white;
+        margin: 4px auto 0;
+
+      }
+    
+    }
+
+
+
+  }
+
+
+}
