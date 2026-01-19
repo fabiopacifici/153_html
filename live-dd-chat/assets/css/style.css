@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* #region Common */
+:root
+{
+  --dis-sidebar-bg: #141318;
+  --dis-main-bg: #1c1d22;
+  --dis-footer-bg: #2d2d35;
+  --dis-secondary-bg: #373a43;
+  --dis-active-message-bg: #26262e;
+  --dis-white: #fbfafb;
+  --dis-text-color: #818285;
+}
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body
+{
+  font-family: "Montserrat", sans-serif;
+  width: 512px;
+}
+
+
+.wrapper
+{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer
+{
+  height: 80px;
+  background-color: var(--dis-footer-bg);
+  flex-shrink: 0;
+}
+
+.central-wrapper
+{
+  flex-grow: 1;
+  background-color: var(--dis-sidebar-bg);
+  display: flex;
+  overflow: hidden;
+}
+
+/* #endregion Common */
+
+/* #region Utilities */
+.d-flex
+{
+  display: flex;
+}
+
+/* #endregion Utilities */
+
+/* #region Sidebar */
+.sidebar
+{
+  width: 60px;
+  flex-shrink: 0;
+  background-color: var(--dis-sidebar-bg)
+}
+
+/* #endregion Sidebar */
+
+
+
+/* #region Main */
+main
+{
+  flex-grow: 1;
+  overflow-y: hidden;
+  padding: 0.5rem;
+  padding-right: 0;
+  margin-top: 1rem;
+  border-top-left-radius: 1rem;
+  background: var(--dis-main-bg);
+  color: var(--dis-text-color);
+
+
+  header.messages_header
+  {
+    padding: 0.5rem;
+
+    h2
+    {
+      color: white;
+      margin-bottom: 0.5rem;
+    }
+
+    &>div
+    {
+      display: flex;
+      gap: 1rem;
+    }
+
+    button
+    {
+      border-style: none;
+      background-color: var(--dis-secondary-bg);
+      color: var(--dis-white);
+      padding: 0.45rem 0.5rem;
+    }
+
+    .serach-btn
+    {
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      width: 2rem;
+      height: 2rem;
+      justify-content: center;
+    }
+
+    .add-friends-btn
+    {
+      flex-grow: 1;
+      border-radius: 1rem;
+    }
+  }
+
+
+  .messages
+  {
+    height: calc(100% - 85px);
+    overflow: auto;
+
+    .message_item
+    {
+      display: flex;
+      gap: 0.5rem;
+      margin: 0.5rem 0;
+      padding: 1rem;
+
+      img
+      {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 50%;
+      }
+
+      .message_details
+      {
+        flex-grow: 1;
+        padding: 0.25rem;
+      }
+
+      .message_details_text,
+      .last_time
+      {
+        font-size: 0.75rem;
+      }
+
+    }
+
+    .message_item.active
+    {
+      background-color: var(--dis-active-message-bg);
+      color: var(--dis-white);
+      border-radius: 1rem;
+    }
+  }
+}
+
+/* #endregion Main */
