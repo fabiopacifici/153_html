@@ -11,7 +11,7 @@
 
 body
 {
-  width: 512px;
+
   font-family: "Space Grotesk", sans-serif;
   background-color: rgb(219, 219, 219);
   /*   background-image: url('https://pics.freeartbackgrounds.com/midle/Sea_Wave_on_Sand_Background-1229.jpg');
@@ -51,14 +51,14 @@ main
 {
   padding: 1rem 2rem;
   /*  padding-top: 70px; */
-  min-height: 500px;
+  min-height: 100vh;
 }
 
 .wireframe_card
 {
   border: 1px solid rgb(194, 194, 194);
   padding: 8px;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
   min-height: 180px;
   border-radius: 0.75rem;
   background-color: rgba(255, 255, 255, 0.842);
@@ -108,3 +108,33 @@ footer
 }
 
 /* #endregion Footer */
+
+
+/* Container thory */
+
+.container
+{
+  max-width: 900px;
+  margin: 0 auto;
+
+}
+
+.container.debug
+{
+/*   border: 1px dashed red; */
+}
+
+.card_deck
+{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.wireframe_card
+{
+  width: calc(100% / 3 - (15px * 2) / 3);
+  flex-shrink: 0;
+  flex-grow: 1;
+  min-width: 290px;
+}
