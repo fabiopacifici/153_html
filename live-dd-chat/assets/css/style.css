@@ -23,10 +23,11 @@
 body
 {
   font-family: "Montserrat", sans-serif;
-  width: 512px;
+ /*  width: 512px; */
 }
 
-img {
+img
+{
   max-width: 100%;
 }
 
@@ -72,14 +73,18 @@ footer
   background-color: var(--dis-sidebar-bg);
 
 
-  .server {
+  .server
+  {
     padding: 0.5rem
   }
 
-  li:first-child {
+  li:first-child
+  {
     position: relative;
   }
-  li:first-child:before {
+
+  li:first-child:before
+  {
     content: '';
     position: absolute;
     left: 0;
@@ -92,7 +97,8 @@ footer
     border-bottom-right-radius: 2px;
   }
 
-  li:not(:first-child) img {
+  li:not(:first-child) img
+  {
     border-radius: 50%;
   }
 
@@ -118,7 +124,8 @@ main
   header.messages_header
   {
     padding: 0.5rem;
-
+    max-width: 900px;
+    margin: 0 auto;
     h2
     {
       color: white;
@@ -161,6 +168,8 @@ main
   {
     height: calc(100% - 85px);
     overflow: auto;
+    max-width: 768px;
+    margin: 0 auto;
 
     .message_item
     {
@@ -202,3 +211,66 @@ main
 }
 
 /* #endregion Main */
+
+
+/* Footer */
+
+footer
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  button
+  {
+    background-color: transparent;
+    border-style: none;
+    color: var(--dis-white);
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    font-family: "Montserrat", sans-serif;
+
+    img
+    {
+      border-radius: 50%;
+    }
+
+    i
+    {
+      font-size: 1.5rem;
+    }
+
+    span
+    {
+      font-size: 0.75rem;
+    }
+  }
+}
+
+/* Change the scrollbar 
+https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp
+*/
+/* width */
+::-webkit-scrollbar
+{
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track
+{
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb
+{
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover
+{
+  background: #555;
+}
