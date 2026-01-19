@@ -1,0 +1,98 @@
+.stats-grid:first-child>.stat-number::before
+{
+  content: '🔥';
+  display: block;
+}
+
+.stats-grid:last-child
+{
+  background-image: linear-gradient(to left, rgb(98, 98, 240), rgb(92, 0, 92));
+
+  span,
+  div
+  {
+    color: white;
+  }
+}
+
+.stats-grid:hover
+{
+  position: relative;
+  bottom: 5px;
+  box-shadow: 0px 0px 10px rgb(98, 98, 240);
+}
+
+.workout-plan:nth-child(3)
+{
+  background-color: rgb(248, 247, 199);
+  border-left: 5px solid orange;
+}
+
+.exercise-item:first-child,
+.exercise-item:last-child
+{
+  background-color: rgb(235, 255, 235);
+  border-left: 5px solid green;
+}
+
+.exercise-item:nth-child(even) .exercise-name::before
+{
+  content: "⚡";
+}
+
+input:focus,
+select:focus
+{
+  outline: 2px solid rgb(66, 66, 248);
+}
+
+.save-btn:hover
+{
+  position: relative;
+  bottom: 2px;
+  background-color: rgb(96, 61, 255);
+  box-shadow: 0 0 5px rgb(101, 111, 255);
+}
+
+.progress-bar
+{
+  position: relative;
+}
+
+.progress-bar::before
+{
+  content: '65%';
+  padding: 4px;
+  font-size: 10px;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -45%);
+
+}
+
+.nav-footer
+{
+  a:hover
+  {
+    background-color: rgb(2, 26, 22);
+    color: rgb(122, 122, 255);
+  }
+}
+
+.quote-box p
+{
+  line-height: 1;
+}
+
+.quote-box p::before,
+.quote-box p::after
+{
+  content: '"';
+  font-size: 2.5rem;
+  line-height: 1;
+  opacity: 0.7;
+  display: inline;
+}
