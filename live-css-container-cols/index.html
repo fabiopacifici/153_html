@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Containers + Colums Layout</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="debug">
+
+  <!-- 
+⚠️ Option 1 contaier that wraps the entire page  
+<div class="container">
+    <header>
+      <h1>Header</h1>
+    </header>
+    <main>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus veniam magni voluptate doloremque impedit. Fugit
+        enim ex odit, velit expedita, voluptate, est facere cumque excepturi beatae repudiandae. Tempora aliquam modi at
+        aperiam, eligendi in illo expedita minus eius officiis quidem, perferendis neque facilis ipsam ab exercitationem
+        earum explicabo delectus tenetur amet. Adipisci culpa sed quia aut aperiam et fugiat vero ipsum quo voluptatibus
+        officiis praesentium accusantium pariatur asperiores doloremque maxime, commodi voluptate! Libero facilis illum,
+        alias magnam in aut incidunt velit hic consequuntur qui molestiae nostrum magni fugit quibusdam est,
+        consectetur, ipsa quas et cupiditate quo. Quia odit maxime necessitatibus expedita. Illo alias voluptatem
+        laboriosam maxime aperiam non sint quo ipsa ullam iusto? Fuga, eum veritatis ea praesentium quidem tenetur cum
+        quisquam facere, dolores delectus quod dolore et non ipsum minus sequi. Labore corporis praesentium mollitia
+        adipisci dignissimos dolorem delectus, fugiat porro voluptas? Vero in nulla, recusandae quidem praesentium
+        veniam deleniti ullam doloremque laborum nostrum culpa vitae sed rerum inventore consequuntur nam cupiditate
+        quibusdam tempora neque sunt laboriosam porro qui obcaecati nisi? Dolore, tempore praesentium rem et libero
+        eligendi, natus, eius aliquid alias distinctio eveniet. Magni, eligendi pariatur alias ipsum exercitationem
+        blanditiis qui voluptate ex reprehenderit nulla voluptatibus molestias. Cum?
+      </div>
+    </main>
+    <footer>
+      <div> &copy; Copyright Boolean</div>
+    </footer>
+  </div> -->
+
+
+  <header>
+    <div class="container-lg">
+      <h1>Header</h1>
+    </div>
+  </header>
+  <main>
+    <!-- Option 2  container inside each section-->
+    <section class="about">
+      <div class="container">
+
+        <h2>About</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dignissimos culpa, repellendus eos alias
+          dolores molestias impedit assumenda ut quas, dicta quidem, ipsum voluptatem! Obcaecati ad adipisci debitis
+          reiciendis quam.</p>
+      </div>
+    </section>
+
+
+    <section class="skills">
+      <div class="container">
+
+        <h2>Skills</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dignissimos culpa, repellendus eos alias
+          dolores molestias impedit assumenda ut quas, dicta quidem, ipsum voluptatem! Obcaecati ad adipisci debitis
+          reiciendis quam.</p>
+
+
+        <!-- Card deck must flex its items -->
+        <div class="card_deck">
+          <!-- card must act as column -->
+          <div class="card">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore tempore voluptas officia est dolorum
+            neque nam quos repellat perferendis fugit pariatur ex, quam temporibus laudantium magnam. Voluptate quam
+            reiciendis voluptas!
+          </div>
+          <div class="card">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore tempore voluptas officia est dolorum
+            neque nam
+            quos repellat perferendis fugit pariatur ex, quam temporibus laudantium magnam. Voluptate quam reiciendis
+            voluptas!
+          </div>
+          <div class="card">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore tempore voluptas officia est dolorum
+            neque nam
+            quos repellat perferendis fugit pariatur ex, quam temporibus laudantium magnam. Voluptate quam reiciendis
+            voluptas!
+          </div>
+        </div>
+
+
+
+
+        <!-- Card deck must flex its items -->
+        <div class="row">
+          <!-- card must act as column -->
+          <div class="col">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore tempore voluptas officia est dolorum
+            neque nam quos repellat perferendis fugit pariatur ex, quam temporibus laudantium magnam. Voluptate quam
+            reiciendis voluptas!
+          </div>
+          <div class="col">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore tempore voluptas officia est dolorum
+            neque nam
+            quos repellat perferendis fugit pariatur ex, quam temporibus laudantium magnam. Voluptate quam reiciendis
+            voluptas!
+          </div>
+          <div class="col">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore tempore voluptas officia est dolorum
+            neque nam
+            quos repellat perferendis fugit pariatur ex, quam temporibus laudantium magnam. Voluptate quam reiciendis
+            voluptas!
+          </div>
+        </div>
+
+
+
+      </div>
+    </section>
+
+
+
+    <!-- Option 3 container that wraps everything in the main tag -->
+    <div class="container">
+      <section class="profile">
+        <h2>Profile</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dignissimos culpa, repellendus eos alias
+          dolores molestias impedit assumenda ut quas, dicta quidem, ipsum voluptatem! Obcaecati ad adipisci debitis
+          reiciendis quam.</p>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+
+      <div> &copy; Copyright Boolean</div>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>

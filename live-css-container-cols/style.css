@@ -1,0 +1,64 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* 
+.debug {
+  .container, .container-lg {
+    border: 1px solid red ;
+  }
+} */
+
+.container
+{
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.container-lg {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+header {
+  background-color: darkseagreen;
+}
+
+
+.about {
+  background-color: paleturquoise;
+}
+
+.skills
+{
+  background-color: blanchedalmond;
+}
+.profile {
+  background-color: palevioletred;
+}
+
+
+.card_deck, .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.card, .col {
+  width: calc(100% / 3 - (15px * 2) / 3);
+  flex-shrink: 0;
+  flex-grow: 1;
+  min-width: 290px;
+  background-color: red;
+
+}
+
+
+
+footer {
+  background-color: papayawhip;
+}
+
