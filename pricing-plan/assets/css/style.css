@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root
+{
+  --plans-black: black;
+  --plans-white: white;
+  --plans-primary: #6500ff;
+  --plans-discount-badge-bg: #e3e3e3;
+  --plans-text-muted: #888488;
+
+
+}
+
+body
+{
+  font-family: "Roboto", sans-serif;
+}
+
+button,
+.btn
+{
+  background-color: transparent;
+  border-style: none;
+}
+
+/* #region Utilities */
+.container
+{
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.text-muted
+{
+  color: var(--plans-text-muted);
+}
+
+.badge
+{
+  background-color: var(--plans-discount-badge-bg);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.btn
+{
+  display: block;
+  width: 100%;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+
+}
+
+.btn-lg
+{
+  padding: 1.5rem 2rem;
+  font-size: 1.25rem;
+}
+
+.btn-primary
+{
+  background-color: var(--plans-primary);
+  color: var(--plans-white);
+
+}
+
+.list-unsytled
+{
+  list-style: none;
+}
+
+/* #endregion Utilities */
+
+/* Plans */
+#plans
+{
+  padding: 1rem;
+
+  h1
+  {
+    font-size: 2.5rem;
+  }
+
+  p
+  {
+    color: var(--plans-text-muted);
+  }
+}
+
+#price_togglers
+{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 1rem;
+  margin-bottom: 3rem;
+
+  &>button
+  {
+    font-size: 1.15rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    i
+    {
+      font-size: 1.5rem;
+
+    }
+
+    span
+    {
+      color: var(--plans-text-muted);
+    }
+  }
+
+}
+
+/* 
+Esempio Annimendo e nesting
+body>section
+{}
+
+body
+{
+
+  &>section
+  {}
+}
+
+
+body>div>section
+{}
+
+body section
+{}
+
+body
+{
+  section
+  {}
+}
+
+section>header
+{}
+
+section header
+{} */
+
+
+.card_deck
+{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.card
+{
+
+  /* column rules */
+  flex-basis: calc(100% / 3 - (15px * 2) / 3);
+  flex-grow: 1;
+  flex-shrink: 0;
+  min-width: 290px;
+
+  /* Card style rules */
+  box-shadow: 0 0 10px lightgray;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+
+  h2
+  {
+    font-size: 1.75rem;
+  }
+
+  .plan_price
+  {
+    text-align: center;
+
+    .currency
+    {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .price
+    {
+      font-size: 4rem;
+      font-weight: bolder;
+    }
+
+  }
+
+  .discount
+  {
+    margin: 2rem 0;
+  }
+
+
+  .plan_features
+  {
+    margin-top: 2rem;
+    line-height: 2.75rem;
+
+
+
+    & i
+    {
+      font-size: 1.75rem;
+    }
+
+  }
+
+
+
+}
+
+#site_header
+{
+  padding: 1rem;
+
+  .container
+  {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  nav
+  {
+    display: none;
+  }
+
+}
+
+
+
+
+@media screen and (min-width: 768px)
+{
+
+  body
+  {
+    background-color: lightblue;
+  }
+
+  .card
+  {
+    background-color: white;
+  }
+
+  .card
+  {
+    & .plan_price
+    {
+      .price
+      {
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 1024px)
+{
+  .container
+  {
+    max-width: 1200px;
+  }
+
+  .mobile_toggler {
+    display: none;
+  }
+
+    #site_header {
+      nav {
+        display: block;
+      }
+      
+    }
+
+}
